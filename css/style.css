@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+.font1 {
+    font-family: "Digital-7";
+    font-size: 50px;
+}
+
+main {
+    background-color: azure;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 30%;
+    min-height: 90%;
+    background-color: aliceblue;
+}
+
+main .content {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    background-color: gray;
+    padding: 10px;
+}
+
+main .panel {
+    padding: 20px 0;
+}
+
+main .panelinput {
+    width: 100%;
+    padding: 0 5px;
+    text-align: right;
+}
+
+main .buttons {
+    display: grid;
+    grid-template-areas: "del c modulo divide" "num7 num8 num9 multiply" "num4 num5 num6 minus" "num1 num2 num3 plus" "num0 period equals plus";
+    grid-row: repeat(5, 1fr);
+    grid-column: repeat(4, 1fr);
+}
+
+.buttons button {
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.buttons .plus {
+    grid-area: plus;
+}
