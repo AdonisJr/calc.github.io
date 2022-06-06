@@ -14,10 +14,11 @@ main {
 main .container {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 5px;
     width: 30%;
     min-height: 90%;
     background-color: aliceblue;
+    border-radius: 30px;
 }
 
 main .content {
@@ -32,10 +33,25 @@ main .panel {
     padding: 20px 0;
 }
 
-main .panelinput {
+main .panelinput1 {
     width: 100%;
     padding: 0 5px;
     text-align: right;
+    border: none;
+}
+
+main .panelinput2 {
+    width: 100%;
+    padding: 0 5px;
+    text-align: left;
+    color: rgb(178, 176, 176);
+    border: none;
+}
+
+main .divpanel {
+    background-color: black;
+    padding: 5px;
+    margin-bottom: 15px;
 }
 
 main .buttons {
